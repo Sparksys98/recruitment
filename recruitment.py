@@ -4,7 +4,7 @@ def main():
 	age=int(input("How old are you? "))
 	experience=int(input("How many years of experience do you have? "))
 
-	skills=["Python","C++","Javascript","Juggling","Running","Eating"]
+	skills=["Python", "C++", "JavaScript", "Meeting", "Leeting", "Eating"]
 	cv={
 	"name":name,
 	"age": age,
@@ -17,6 +17,7 @@ def main():
 	choice2=int(input("Choose another skill from above by entering its number: "))
 	cv["skills"].append(skills[choice1-1])
 	cv["skills"].append(skills[choice2-1])
+	print (cv["skills"])
 	if(40 >cv["age"] > 25 and experience>5 and "Eating" in cv["skills"]):
 		print("accepted")
 	else:
